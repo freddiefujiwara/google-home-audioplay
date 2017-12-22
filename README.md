@@ -6,7 +6,7 @@
 [![dependencies Status](https://david-dm.org/freddiefujiwara/google-home-audioplay/status.svg)](https://david-dm.org/freddiefujiwara/google-home-audioplay)
 
 # google-home-audioplay
-Command line client for chromeless
+Command line client for google home
 
 ## Requirements
 
@@ -20,7 +20,7 @@ npm i -g google-home-audioplay
 
 ## Usage
 ```bash                                                                                     
-  Usage: google-home-audioplay <host> <text>                                                                                    
+  Usage: google-home-audioplay <host> <url>                                                                                    
                                                                                                                          
                                                                                                                                
                                                                                                                                
@@ -32,7 +32,7 @@ npm i -g google-home-audioplay
 
 ## Example
 ```bash
-google-home-audioplay 192.168.1.101 "Hello I'm Freddie"
+google-home-audioplay 192.168.1.101 https://goo.gl/ATTmxX
 ```
 
 ## FAQ

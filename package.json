@@ -1,6 +1,6 @@
 {
     "name": "google-home-audioplay",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "Command line client for chromeless",
     "scripts": {
         "clean": "rimraf lib",
@@ -58,7 +58,8 @@
     "dependencies": {
         "castv2-client": "^1.2.0",
         "commander": "^2.11.0",
-        "semver": "^5.4.1"
+        "semver": "^5.4.1",
+        "sync-request": "^4.1.0"
     },
     "engines": {
         "node": ">=7.6"

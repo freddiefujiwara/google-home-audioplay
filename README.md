@@ -1,4 +1,4 @@
-[](https://travis-ci.org/freddiefujiwara/google-home-audioplay)
+[![Node.js CI](https://github.com/freddiefujiwara/google-home-audioplay/workflows/Node.js%20CI/badge.svg)](https://github.com/freddiefujiwara/google-home-audioplay/actions)
 [![npm version](https://badge.fury.io/js/google-home-audioplay.svg)](https://badge.fury.io/js/google-home-audioplay)
 [![dependencies Status](https://david-dm.org/freddiefujiwara/google-home-audioplay/status.svg)](https://david-dm.org/freddiefujiwara/google-home-audioplay)
 

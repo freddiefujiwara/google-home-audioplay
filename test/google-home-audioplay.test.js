@@ -11,16 +11,6 @@ describe('GoogleHomeAudioplay test.', (suite) => {
         ghs.should.have.property('client').with.equal(undefined);
         ghs.should.have.property('reciever').with.equal(undefined);
     });
-    it('should get header properly ', async () => {
-        const ghs = new GoogleHomeAudioplay();
-        ghs.should.have.property('fetchContentType').with.be.a('function');
-        ghs.request = requestMockTextHTML;
-        ghs.fetchContentType('http://example.com').should.equal('text/html');
-        ghs.request = requestMockVideoMp4;
-        ghs.fetchContentType('http://example.com/video.mp4').should.equal('video/mp4');
-        ghs.request = requestMockAudioXMpeg;
-        ghs.fetchContentType('http://example.com/audio.mp3').should.equal('audio/x-mpeg');
-    });
     it('should run properly ', async () => {
         const ghs = new GoogleHomeAudioplay();
         ghs.should.have.property('run').with.be.a('function');

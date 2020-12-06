@@ -18,25 +18,6 @@ export default class GoogleHomeAudioplay {
         this.request = undefined;
     }
     /**
-     * fetch contentType to confirm content type
-     * @param {string} url
-     * @return {string}
-     */
-    fetchContentType(url) {
-        if ( typeof this.request === 'undefined') {
-            this.request = request;
-        }
-        let res = this.request('HEAD', url);
-        if (res.hasOwnProperty('headers') &&
-            res['headers'].hasOwnProperty('content-type')) {
-            let types = res['headers']['content-type'].split(';');
-            if (types.length > 0 ) {
-                return types[0];
-            }
-        }
-        return 'audio/mp3';
-    }
-    /**
      * run commands
      * @return {void}
      */
@@ -53,7 +34,6 @@ export default class GoogleHomeAudioplay {
             this.client.launch(this.reciever, (err, player) => {
                 let media = {
                     contentId: this.url,
-                    contentType: this.fetchContentType(this.url),
                     streamType: 'BUFFERED',
                 };
                 player.on('status', (status) => {
